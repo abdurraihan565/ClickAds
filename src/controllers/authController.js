@@ -15,7 +15,7 @@ const handleLogin = async (req, res, next) => {
     if (!user) {
       throw createError(
         404,
-        'You are dose not Exist With This Email . Pleaes Register Now'
+        'You are Dose not Exist With This Email . Pleaes Register Now'
       );
     }
     //compare the password

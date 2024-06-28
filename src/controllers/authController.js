@@ -21,7 +21,7 @@ const handleLogin = async (req, res, next) => {
     //compare the password
     const isPasswordMatch = await bcrypt.compare(password, user.password);
     if (!isPasswordMatch) {
-      throw createError(401, ' Email or Password dose not Match.');
+      throw createError(401, ' Email or Password Dose not Match.');
     }
     //isbanned
 

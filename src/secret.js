@@ -1,6 +1,6 @@
 require('dotenv').config();
-const serverPort = process.env.SERVER_PORT || 3003;
-
+//const serverPort = process.env.SERVER_PORT || 3003;
+const serverPorts = process.env.PORT || 3005;
 const MongodbURL =
   process.env.MONGODB_ATLAS_URL || 'mongodb://localhost:27017/clickAds';
 const defaultImagePath =
@@ -23,7 +23,7 @@ const smtpPassword = process.env.SMTP_PASSWORD || '';
 const clintURL = process.env.CLINT_URL || '';
 
 module.exports = {
-  serverPort,
+  serverPorts,
   MongodbURL,
   defaultImagePath,
   jwtActivationKey,
